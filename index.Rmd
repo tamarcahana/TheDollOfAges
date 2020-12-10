@@ -1,7 +1,9 @@
 ---
 title: The Doll of All Ages
 author: Tamar Cahana
-output: html_document
+output:
+  prettydoc::html_pretty:
+    theme: leonids
 ---
 
 
