@@ -32,6 +32,6 @@ library(knitr)
 ```
 
 ```{r pic, echo=FALSE, out.width = '100%'}
-include_graphics(file.path(root, 'images', 'test1.png'))
+include_graphics(file.path(root, 'images', 'final.png'))
 ```
 
