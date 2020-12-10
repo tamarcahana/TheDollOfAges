@@ -1,0 +1,37 @@
+---
+title: The Doll of All Ages
+author: Tamar Cahana
+output: html_document
+---
+
+
+```{r global.options, include = FALSE}
+knitr::opts_chunk$set(
+  warning = FALSE, # show warnings during codebook generation
+  message = FALSE, # show messages during codebook generation
+  echo = FALSE,  # don't show the R code
+  fig.align = 'center', fig.pos = "H"
+)
+```
+
+
+```{r standard setup}
+if (.Platform$GU == 'RStudio') {
+  root <- rstudioapi::getSourceEditorContext()$path
+} else {
+  root <- getwd()
+}
+while (basename(root) != 'doll_of_all_ages') {
+  root <- dirname(root)
+}
+
+```
+
+```{r libraries}
+library(knitr)
+```
+
+```{r pic, echo=FALSE, out.width = '100%'}
+include_graphics(file.path(root, 'images', 'test1.png'))
+```
+
