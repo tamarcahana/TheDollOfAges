@@ -1,10 +1,15 @@
 ---
-title: The Doll of All Ages
-author: Tamar Cahana
 output:
-  prettydoc::html_pretty:
-    theme: leonids
+  html_document:
+    anchor_sections: false
+    theme: cerulean
+header-includes:
+  - \usepackage{fontspec}
 ---
+
+<style type="text/css">
+ body{ font-family: Average; font-size: 16pt; }
+</style>
 
 
 ```{r global.options, include = FALSE}
@@ -15,7 +20,6 @@ knitr::opts_chunk$set(
   fig.align = 'center', fig.pos = "H"
 )
 ```
-
 
 ```{r standard setup}
 if (.Platform$GU == 'RStudio') {
@@ -33,7 +37,43 @@ while (basename(root) != 'doll_of_all_ages') {
 library(knitr)
 ```
 
-```{r pic, echo=FALSE, out.width = '100%'}
-include_graphics(file.path(root, 'images', 'final.png'))
+# The Doll of All Ages&trade;  {.tabset}
+
+## Home
+
+```{r pic, echo=FALSE, out.width = '70%'}
+include_graphics(file.path(root, 'images', 'poster.png'))
 ```
 
+## About the Product
+
+<span style="color: black;">
+<font size="5"> 
+Say hello to your new friend! The Doll of All Ages&trade; is a one of a kind toy that grows with you, learns with you, and teaches you valuable life lessons! The Doll of All Ages will grow by your side your whole childhood, and every time you buy your next microchip, they will also teach you how to do cool things! 
+</font> 
+</span>
+
+
+```{r doll product, echo=FALSE, out.width = '70%'}
+include_graphics(file.path(root, 'images', 'doll_product.png'))
+```
+
+## Microchip Packs
+
+<span style="color: black;">
+<font size="5"> 
+Every microchip you buy contains important skills that the Doll of All Ages&trade; will patiently teach your child. When you think they are ready for the next chip, just order the next level up!
+</font> 
+</span>
+
+```{r microchips pack, echo=FALSE, out.width = '70%'}
+include_graphics(file.path(root, 'images', 'microchips_pack.png'))
+```
+
+<center>
+<span style="color: black;">
+<font size="5"> 
+*Customizable chips available upon request! An extra $10.00 per custom order.*
+</font> 
+</span>
+</center>
